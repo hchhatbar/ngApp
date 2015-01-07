@@ -6,7 +6,7 @@ angular.module('jwtApp')
     return {
     	require: 'ngModel',
     	link: function(scope,element,attrs,ngModelCtrl){
-    		function validateEquals(value){
+    		function validateEqual(value){
     			var valid = (value === scope.$eval(attrs.validateEquals));
     			ngModelCtrl.$setValidity('equal',valid);
     			console.log(valid);
